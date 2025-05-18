@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Notes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white border-b">
+        <div class="px-6 py-3 flex items-center">
+          <!-- Logo -->
+          <a class="flex items-center">
+            <div class="flex flex-col -space-y-1">
+              <div class="flex items-center">
+                <img src="https://media.licdn.com/dms/image/v2/D560BAQFMO_FydaEpBA/company-logo_200_200/company-logo_200_200/0/1726658673264/aaghaaz_tech_logo?e=1751500800&v=beta&t=5JCdqtvGFKyVscr231sWO1_6im-W74Ak7rXFTwYcd8I" 
+                     alt="Logo" 
+                     class="h-5">
+                <span class="text-xl font-bold text-[#000000] -ml-1">aghaaz</span>
+              </div>
+              <span class="text-xl font-bold italic text-[#000000] ml-6" style="margin-top: -8px; margin-left: 40px;">Tech</span>
+            </div>
+          </a>
+  
+          <!-- Search Section -->
+          <div class="flex items-center ml-[60px] relative">
+            <div class="flex items-center w-[300px] bg-gray-50 relative overflow-hidden" style="border-radius: 5%; border: 2px solid transparent; background-image: linear-gradient(#fff, #fff), linear-gradient(90deg, #FFB800, #7FD157); background-origin: border-box; background-clip: content-box, border-box;">
+              <i class="fa-solid fa-magnifying-glass text-gray-400 absolute left-3"></i>
+              <input type="text" 
+                     placeholder="Search" 
+                     class="bg-transparent w-full pl-10 pr-2 py-2 text-sm placeholder-gray-400 outline-none" 
+                     style="border-radius: 5%;">
+              <div class="flex items-center gap-1.5 border-l border-gray-200 pl-2 pr-1 py-1.5">
+                <span class="text-sm text-gray-600">F</span>
+                <i class="fa-solid fa-chevron-down text-xs text-gray-400"></i>
+              </div>
+            </div>
+          </div>
+  
+          <!-- User Section -->
+          <div class="flex items-center gap-6 ml-auto">
+            <div class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center">
+              <i class="fa-regular fa-bell text-gray-600"></i>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="text-gray-700">Hasnain</span>
+              <div class="relative group">
+                <button class="flex items-center gap-2">
+                  <img src="avatar.jpg" alt="User" class="w-8 h-8 rounded-full">
+                  <i class="fa-solid fa-chevron-down text-xs text-gray-400"></i>
+                </button>
+                <!-- Dropdown menu can be added here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+  
+      <div class="flex">
+        <!-- Sidebar -->
+       <!-- Sidebar -->
+  <div class="w-64 min-h-screen bg-white">
+    <div class="p-4 space-y-1">
+        <!-- Dashboard -->
+        <a href="dashnoard.html" class="flex items-center px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50">
+            <i class="fa-solid fa-house mr-3"></i>
+            <span class="font-medium">Dashboard</span>
+        </a>
+  
+        <!-- Assignments -->
+        <a href="assignment.html" class="flex items-center px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50">
+            <i class="fa-solid fa-clipboard-list mr-3"></i>
+            <span class="font-medium">Assignments</span>
+        </a>
+  
+        <!-- Schedule -->
+        <a href="schedule.html" class="flex items-center px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50">
+            <i class="fa-regular fa-calendar-days mr-3"></i>
+            <span class="font-medium">Schedule</span>
+        </a>
+  
+        <!-- Recordings -->
+        <a href="recording.html" class="flex items-center px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50">
+            <i class="fa-solid fa-message mr-3"></i>
+            <span class="font-medium">Recordings</span>
+        </a>
+  
+        <!-- Resources -->
+        <a href="#" class="flex items-center px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50">
+            <i class="fa-solid fa-folder-closed mr-3"></i>
+            <span class="font-medium">Resources</span>
+        </a>
+  
+        <!-- Notes -->
+        <a href="notes.html" class="flex items-center px-4 py-3 rounded-lg bg-gradient-to-r from-yellow-400 to-teal-400 text-white">
+            <i class="fa-solid fa-note-sticky mr-3"></i>
+            <span class="font-medium">Notes</span>
+        </a>
+  
+        <!-- Courses -->
+        <a href="#" class="flex items-center px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50">
+            <i class="fa-solid fa-graduation-cap mr-3"></i>
+            <span class="font-medium">Courses</span>
+        </a>
+    </div>
+  </div>
+        <!-- Main Content -->
+        <div class="flex-1 p-8">
+            <!-- Header -->
+            <div class="flex items-center justify-between mb-8">
+                <h1 class="text-2xl font-semibold" style="color: #7FD157;">Notes</h1>
+                <div class="flex items-center gap-4">
+                    <button class="flex items-center gap-2 px-4 py-2 text-sm border rounded-lg" style="color: #FFB800; border-color: #FFB800;">
+                        <i class="fa-solid fa-arrow-down-wide-short"></i>
+                        Sort By
+                    </button>
+                    <button class="flex items-center gap-2 px-4 py-2 text-sm border rounded-lg" style="color: #7FD157; border-color: #7FD157;">
+                        <i class="fa-solid fa-filter"></i>
+                        Filter
+                    </button>
+                    <button class="flex items-center gap-2 px-4 py-2 text-sm text-white rounded-lg" style="background: linear-gradient(90deg, #FFB800 0%, #7FD157 100%);">
+                        <i class="fa-solid fa-plus"></i>
+                        Add Notes
+                    </button>
+                </div>
+            </div>
+
+            <!-- Notes Grid -->
+            <div class="grid grid-cols-3 gap-4">
+                <!-- Note 1 -->
+                <div class="bg-white p-4 rounded-lg border" style="min-height: 200px;">
+                    <div class="flex gap-2 mb-3">
+                        <span class="px-2 py-0.5 text-xs rounded-full" style="background: rgba(255, 184, 0, 0.1); color: #FFB800;">Weekly</span>
+                        <span class="px-2 py-0.5 text-xs rounded-full" style="background: rgba(127, 209, 87, 0.1); color: #7FD157;">Product</span>
+                    </div>
+                    <h3 class="text-base font-semibold mb-2">Product Team Meeting</h3>
+                    <p class="text-sm text-gray-600 mb-2">This monthly progress agenda is following this items:</p>
+                    <ul class="list-disc pl-4 mb-3 text-sm text-gray-600">
+                        <li>Introduction to Newest Product Plan</li>
+                        <li>Monthly Revenue updates for each</li>
+                    </ul>
+                    <div class="flex items-center gap-2">
+                        <img src="avatar.jpg" alt="User" class="w-7 h-7 rounded-full">
+                        <div class="flex items-center justify-between w-full">
+                            <p class="text-sm font-medium">Hasnain Saleem</p>
+                            <p class="text-xs text-gray-500">Mar 5 04:25</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Note 2 -->
+                <div class="bg-white p-4 rounded-lg border" style="min-height: 200px;">
+                    <div class="flex gap-2 mb-3">
+                        <span class="px-2 py-0.5 text-xs rounded-full" style="background: rgba(127, 209, 87, 0.1); color: #7FD157;">Monthly</span>
+                        <span class="px-2 py-0.5 text-xs rounded-full" style="background: rgba(138, 43, 226, 0.1); color: blueviolet;">Business</span>
+                    </div>
+                    <h3 class="text-base font-semibold mb-2">Product Team Meeting</h3>
+                    <p class="text-sm text-gray-600 mb-2">This monthly progress agenda is following this items:</p>
+                    <ul class="list-disc pl-4 mb-3 text-sm text-gray-600">
+                        <li>Introduction to Newest Product Plan</li>
+                        <li>Monthly Revenue updates for each</li>
+                    </ul>
+                    <div class="flex items-center gap-2">
+                        <img src="avatar.jpg" alt="User" class="w-7 h-7 rounded-full">
+                        <div class="flex items-center justify-between w-full">
+                            <p class="text-sm font-medium">Ayesha Hamid</p>
+                            <p class="text-xs text-gray-500">Apr 11 18:30</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Note 3 -->
+                <div class="bg-white p-4 rounded-lg border" style="min-height: 200px;">
+                    <div class="flex gap-2 mb-3">
+                        <span class="px-2 py-0.5 text-xs rounded-full" style="background: rgba(255, 165, 0, 0.1); color: orange;">Personal</span>
+                        <span class="px-2 py-0.5 text-xs rounded-full" style="background: rgba(138, 43, 226, 0.1); color: blueviolet;">Business</span>
+                    </div>
+                    <h3 class="text-base font-semibold mb-2">HR Interview</h3>
+                    <p class="text-sm text-gray-600 mb-2">This monthly progress agenda is following this items:</p>
+                    <ul class="list-disc pl-4 mb-3 text-sm text-gray-600">
+                        <li>Introduction to Newest Product Plan</li>
+                        <li>Monthly Revenue updates for each</li>
+                    </ul>
+                    <div class="flex items-center gap-2">
+                        <img src="avatar.jpg" alt="User" class="w-7 h-7 rounded-full">
+                        <div class="flex items-center justify-between w-full">
+                            <p class="text-sm font-medium">Kinza Umer</p>
+                            <p class="text-xs text-gray-500">Jun 23 14:31</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Note 4 -->
+                <div class="bg-white p-4 rounded-lg border" style="min-height: 200px;">
+                    <div class="flex gap-2 mb-3">
+                        <span class="px-2 py-0.5 text-xs rounded-full" style="background: rgba(127, 209, 87, 0.1); color: #7FD157;">Monthly</span>
+                        <span class="px-2 py-0.5 text-xs rounded-full" style="background: rgba(127, 209, 87, 0.1); color: #7FD157;">Product</span>
+                    </div>
+                    <h3 class="text-base font-semibold mb-2">Monthly Team Progress</h3>
+                    <p class="text-sm text-gray-600 mb-2">This monthly progress agenda is following this items:</p>
+                    <ul class="list-disc pl-4 mb-3 text-sm text-gray-600">
+                        <li>Introduction to Newest Product Plan</li>
+                        <li>Monthly Revenue updates for each</li>
+                    </ul>
+                    <div class="flex items-center gap-2">
+                        <img src="avatar.jpg" alt="User" class="w-7 h-7 rounded-full">
+                        <div class="flex items-center justify-between w-full">
+                            <p class="text-sm font-medium">Rayan</p>
+                            <p class="text-xs text-gray-500">Jan 31 09:53</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Note 5 -->
+                <div class="bg-white p-4 rounded-lg border" style="min-height: 200px;">
+                    <div class="flex gap-2 mb-3">
+                        <span class="px-2 py-0.5 text-xs rounded-full" style="background: rgba(127, 209, 87, 0.1); color: #7FD157;">Monthly</span>
+                        <span class="px-2 py-0.5 text-xs rounded-full" style="background: rgba(138, 43, 226, 0.1); color: blueviolet;">Business</span>
+                    </div>
+                    <h3 class="text-base font-semibold mb-2">Product Team Meeting</h3>
+                    <p class="text-sm text-gray-600 mb-2">Some Summaries of this weeks meeting with some conclusion we get :</p>
+                    <div class="flex items-center gap-2">
+                        <img src="avatar.jpg" alt="User" class="w-7 h-7 rounded-full">
+                        <div class="flex items-center justify-between w-full">
+                            <p class="text-sm font-medium">Burhan</p>
+                            <p class="text-xs text-gray-500">Aug 15 10:29</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Note 6 -->
+                <div class="bg-white p-4 rounded-lg border" style="min-height: 200px;">
+                    <div class="flex gap-2 mb-3">
+                        <span class="px-2 py-0.5 text-xs rounded-full" style="background: rgba(255, 165, 0, 0.1); color: orange;">Personal</span>
+                    </div>
+                    <h3 class="text-base font-semibold mb-2">Document Images</h3>
+                    <p class="text-sm text-gray-600 mb-3">Report Document of Weekly Meetings</p>
+                    <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" 
+                         alt="Document" 
+                         class="w-full h-24 object-cover rounded-lg mb-3">
+                    <div class="flex items-center gap-2">
+                        <img src="avatar.jpg" alt="User" class="w-7 h-7 rounded-full">
+                        <div class="flex items-center justify-between w-full">
+                            <p class="text-sm font-medium">Sufiyan Tahir</p>
+                            <p class="text-xs text-gray-500">Dec 30 21:28</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Note 7 -->
+                <div class="bg-white p-4 rounded-lg border" style="min-height: 200px;">
+                    <div class="flex gap-2 mb-3">
+                        <span class="px-2 py-0.5 text-xs rounded-full" style="background: rgba(255, 184, 0, 0.1); color: #FFB800;">Badge</span>
+                        <span class="px-2 py-0.5 text-xs rounded-full" style="background: rgba(127, 209, 87, 0.1); color: #7FD157;">Product</span>
+                    </div>
+                    <h3 class="text-base font-semibold mb-2">Weekly Team Progress</h3>
+                    <p class="text-sm text-gray-600 mb-2">This weekly progress agenda is following this items:</p>
+                    <ul class="list-disc pl-4 mb-3 text-sm text-gray-600">
+                        <li>Introduction to Newest Product Plan</li>
+                        <li>Monthly Revenue updates for each</li>
+                    </ul>
+                    <div class="flex items-center gap-2">
+                        <img src="avatar.jpg" alt="User" class="w-7 h-7 rounded-full">
+                        <div class="flex items-center justify-between w-full">
+                            <p class="text-sm font-medium">Maryam</p>
+                            <p class="text-xs text-gray-500">Feb 4 12:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Note 8 -->
+                <div class="bg-white p-4 rounded-lg border" style="min-height: 200px;">
+                    <div class="flex gap-2 mb-3">
+                        <span class="px-2 py-0.5 text-xs rounded-full" style="background: rgba(138, 43, 226, 0.1); color: blueviolet;">Business</span>
+                    </div>
+                    <h3 class="text-base font-semibold mb-2">Revenue Progress</h3>
+                    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" 
+                         alt="Revenue Document" 
+                         class="w-full h-24 object-cover rounded-lg mb-3">
+                    <div class="flex items-center gap-2">
+                        <img src="avatar.jpg" alt="User" class="w-7 h-7 rounded-full">
+                        <div class="flex items-center justify-between w-full">
+                            <p class="text-sm font-medium">Shihbaz Asraf</p>
+                            <p class="text-xs text-gray-500">May 20 04:12</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Note 9 -->
+                <div class="bg-white p-4 rounded-lg border" style="min-height: 200px;">
+                    <div class="flex gap-2 mb-3">
+                        <span class="px-2 py-0.5 text-xs rounded-full" style="background: rgba(127, 209, 87, 0.1); color: #7FD157;">Product</span>
+                    </div>
+                    <h3 class="text-base font-semibold mb-2">Monthly Products</h3>
+                    <p class="text-sm text-gray-600 mb-3">Report Document of Weekly Meetings</p>
+                    <div class="grid grid-cols-2 gap-2 mb-3">
+                        <img src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Product 1" 
+                             class="w-full h-20 object-cover rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Product 2" 
+                             class="w-full h-20 object-cover rounded-lg">
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <img src="avatar.jpg" alt="User" class="w-7 h-7 rounded-full">
+                        <div class="flex items-center justify-between w-full">
+                            <p class="text-sm font-medium">Ibrahim Kashif</p>
+                            <p class="text-xs text-gray-500">Oct 4 15:42</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

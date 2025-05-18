@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recordings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  </head>
+  <body class="bg-gray-50">
+<!-- Navbar -->
+<nav class="bg-white border-b">
+  <div class="px-6 py-3 flex items-center">
+    <!-- Logo -->
+    <a class="flex items-center">
+      <div class="flex flex-col -space-y-1">
+        <div class="flex items-center">
+          <img src="https://media.licdn.com/dms/image/v2/D560BAQFMO_FydaEpBA/company-logo_200_200/company-logo_200_200/0/1726658673264/aaghaaz_tech_logo?e=1751500800&v=beta&t=5JCdqtvGFKyVscr231sWO1_6im-W74Ak7rXFTwYcd8I" 
+               alt="Logo" 
+               class="h-5">
+          <span class="text-xl font-bold text-[#000000] -ml-1">aghaaz</span>
+        </div>
+        <span class="text-xl font-bold italic text-[#000000] ml-6" style="margin-top: -8px; margin-left: 40px;">Tech</span>
+      </div>
+    </a>
+
+          <!-- Search Section -->
+          <div class="flex items-center ml-[60px] relative">
+            <div class="flex items-center w-[300px] bg-gray-50 relative overflow-hidden" style="border-radius: 5%; border: 2px solid transparent; background-image: linear-gradient(#fff, #fff), linear-gradient(90deg, #FFB800, #7FD157); background-origin: border-box; background-clip: content-box, border-box;">
+              <i class="fa-solid fa-magnifying-glass text-gray-400 absolute left-3"></i>
+              <input type="text" 
+                     placeholder="Search" 
+                     class="bg-transparent w-full pl-10 pr-2 py-2 text-sm placeholder-gray-400 outline-none" 
+                     style="border-radius: 5%;">
+              <div class="flex items-center gap-1.5 border-l border-gray-200 pl-2 pr-1 py-1.5">
+                <span class="text-sm text-gray-600">F</span>
+                <i class="fa-solid fa-chevron-down text-xs text-gray-400"></i>
+              </div>
+            </div>
+          </div>
+
+    <!-- User Section -->
+    <div class="flex items-center gap-6 ml-auto">
+      <div class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center">
+        <i class="fa-regular fa-bell text-gray-600"></i>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="text-gray-700">Hasnain</span>
+        <div class="relative group">
+          <button class="flex items-center gap-2">
+            <img src="avatar.jpg" alt="User" class="w-8 h-8 rounded-full">
+            <i class="fa-solid fa-chevron-down text-xs text-gray-400"></i>
+          </button>
+          <!-- Dropdown menu can be added here -->
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="flex">
+  <!-- Sidebar -->
+ <!-- Sidebar -->
+<div class="w-64 min-h-screen bg-white">
+<div class="p-4 space-y-1">
+  <!-- Dashboard -->
+  <a href="dashnoard.html" class="flex items-center px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50">
+      <i class="fa-solid fa-house mr-3"></i>
+      <span class="font-medium">Dashboard</span>
+  </a>
+
+  <!-- Assignments -->
+  <a href="assignment.html" class="flex items-center px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50">
+      <i class="fa-solid fa-clipboard-list mr-3"></i>
+      <span class="font-medium">Assignments</span>
+  </a>
+
+  <!-- Schedule -->
+  <a href="schedule.html" class="flex items-center px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50">
+      <i class="fa-regular fa-calendar-days mr-3"></i>
+      <span class="font-medium">Schedule</span>
+  </a>
+
+  <!-- Recordings -->
+  <a href="recording.html" class="flex items-center px-4 py-3 rounded-lg bg-gradient-to-r from-yellow-400 to-teal-400 text-white">
+      <i class="fa-solid fa-message mr-3"></i>
+      <span class="font-medium">Recordings</span>
+  </a>
+
+  <!-- Resources -->
+  <a href="#" class="flex items-center px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50">
+      <i class="fa-solid fa-folder-closed mr-3"></i>
+      <span class="font-medium">Resources</span>
+  </a>
+
+  <!-- Notes -->
+  <a href="notes.html" class="flex items-center px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50">
+      <i class="fa-solid fa-note-sticky mr-3"></i>
+      <span class="font-medium">Notes</span>
+  </a>
+
+  <!-- Courses -->
+  <a href="#" class="flex items-center px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50">
+      <i class="fa-solid fa-graduation-cap mr-3"></i>
+      <span class="font-medium">Courses</span>
+  </a>
+</div>
+</div>
+      <!-- Main Content -->
+      <div class="p-6 flex-1">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-6">
+          <div>
+            <h1 class="text-2xl font-bold text-gray-900">Class Recordings</h1>
+            <p class="text-gray-600">Access and review past class sessions</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="flex items-center">
+              <span class="text-gray-600 mr-2">Filter by</span>
+              <button class="px-3 py-1 text-green-500 hover:bg-gray-50 rounded-md">dates</button>
+              <span class="text-gray-400 mx-1">|</span>
+              <button class="px-3 py-1 text-green-500 hover:bg-gray-50 rounded-md">course</button>
+            </div>
+            <button class="p-2 hover:bg-gray-50 rounded-full">
+              <i class="fa-solid fa-magnifying-glass text-gray-400"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Grid of Cards -->
+        <div class="grid grid-cols-3 gap-6">
+          <!-- Color Styles 02 Card -->
+          <div class="bg-white rounded-lg overflow-hidden border">
+            <div class="p-4 bg-orange-50">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                  <img src="https://placehold.co/48x48" alt="" class="w-8 h-8">
+                </div>
+                <div>
+                  <h3 class="font-semibold text-orange-800">Color Styles</h3>
+                  <p class="text-sm text-orange-600">Let's learn about colors, color contrast and color styles.</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="font-medium">Color styles - 02</h3>
+              <div class="flex items-center gap-4 mt-1 text-sm text-gray-500">
+                <span class="flex items-center gap-1">
+                  <i class="fa-regular fa-clock"></i>
+                  1:30hrs
+                </span>
+                <span class="flex items-center gap-1">
+                  <i class="fa-solid fa-book"></i>
+                  02 Lessons
+                </span>
+              </div>
+              <div class="flex gap-2 mt-4">
+                <button class="flex-1 bg-gradient-to-r from-yellow-400 to-green-400 text-white py-2 rounded-[4px] text-sm flex items-center justify-center gap-1">
+                  <i class="fa-solid fa-play text-xs"></i>
+                  Watch Now
+                </button>
+                <button class="flex-1 bg-white border border-green-400 text-green-400 py-2 rounded-[4px] text-sm flex items-center justify-center gap-1">
+                  <i class="fa-solid fa-download text-xs"></i>
+                  Download
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Design Thinking Card -->
+          <div class="bg-white rounded-lg overflow-hidden border">
+            <div class="p-4 bg-purple-50">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                  <img src="https://placehold.co/48x48" alt="" class="w-8 h-8">
+                </div>
+                <div>
+                  <h3 class="font-semibold text-purple-800">Design Thinking Project</h3>
+                  <p class="text-sm text-purple-600">A project to unlearn and learn the fundamentals of design.</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="font-medium">Design Thinking</h3>
+              <div class="flex items-center gap-4 mt-1 text-sm text-gray-500">
+                <span class="flex items-center gap-1">
+                  <i class="fa-regular fa-clock"></i>
+                  2:30hrs
+                </span>
+                <span class="flex items-center gap-1">
+                  <i class="fa-solid fa-book"></i>
+                  01 Lessons
+                </span>
+              </div>
+              <div class="flex gap-2 mt-4">
+                <button class="flex-1 bg-gradient-to-r from-yellow-400 to-green-400 text-white py-2 rounded-[4px] text-sm flex items-center justify-center gap-1">
+                  <i class="fa-solid fa-play text-xs"></i>
+                  Watch Now
+                </button>
+                <button class="flex-1 bg-white border border-green-400 text-green-400 py-2 rounded-[4px] text-sm flex items-center justify-center gap-1">
+                  <i class="fa-solid fa-download text-xs"></i>
+                  Download
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual Designs Brief Card -->
+          <div class="bg-white rounded-lg overflow-hidden border">
+            <div class="p-4 bg-purple-50">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                  <img src="https://placehold.co/48x48" alt="" class="w-8 h-8">
+                </div>
+                <div>
+                  <h3 class="font-semibold text-purple-800">Constructing Visual Design from </h3>
+                  <p class="text-sm text-purple-600">Making visually looking good UI screens from problem statement briefs</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="font-medium">Visual Designs Briefs</h3>
+              <div class="flex items-center gap-4 mt-1 text-sm text-gray-500">
+                <span class="flex items-center gap-1">
+                  <i class="fa-regular fa-clock"></i>
+                  3:30hrs
+                </span>
+                <span class="flex items-center gap-1">
+                  <i class="fa-solid fa-book"></i>
+                  01 Lessons
+                </span>
+              </div>
+              <div class="flex gap-2 mt-4">
+                <button class="flex-1 bg-gradient-to-r from-yellow-400 to-green-400 text-white py-2 rounded-[4px] text-sm flex items-center justify-center gap-1">
+                  <i class="fa-solid fa-play text-xs"></i>
+                  Watch Now
+                </button>
+                <button class="flex-1 bg-white border border-green-400 text-green-400 py-2 rounded-[4px] text-sm flex items-center justify-center gap-1">
+                  <i class="fa-solid fa-download text-xs"></i>
+                  Download
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Curiosity for Terminology Card -->
+          <div class="bg-white rounded-lg overflow-hidden border">
+            <div class="p-4 bg-purple-50">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                  <img src="https://placehold.co/48x48" alt="" class="w-8 h-8">
+                </div>
+                <div>
+                  <h3 class="font-semibold text-purple-800">Curiosity for Terminology</h3>
+                  <p class="text-sm text-purple-600">Understanding various visual design terms</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="font-medium">Curiosity for terminology</h3>
+              <div class="flex items-center gap-4 mt-1 text-sm text-gray-500">
+                <span class="flex items-center gap-1">
+                  <i class="fa-regular fa-clock"></i>
+                  4:00hrs
+                </span>
+                <span class="flex items-center gap-1">
+                  <i class="fa-solid fa-book"></i>
+                  02 Lessons
+                </span>
+              </div>
+              <div class="flex gap-2 mt-4">
+                <button class="flex-1 bg-gradient-to-r from-yellow-400 to-green-400 text-white py-2 rounded-[4px] text-sm flex items-center justify-center gap-1">
+                  <i class="fa-solid fa-play text-xs"></i>
+                  Watch Now
+                </button>
+                <button class="flex-1 bg-white border border-green-400 text-green-400 py-2 rounded-[4px] text-sm flex items-center justify-center gap-1">
+                  <i class="fa-solid fa-download text-xs"></i>
+                  Download
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Color Styles 01 Card -->
+          <div class="bg-white rounded-lg overflow-hidden border">
+            <div class="p-4 bg-orange-50">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                  <img src="https://placehold.co/48x48" alt="" class="w-8 h-8">
+                </div>
+                <div>
+                  <h3 class="font-semibold text-orange-800">Color Styles</h3>
+                  <p class="text-sm text-orange-600">Let's learn about colors, color contrast and color styles.</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="font-medium">Color styles - 01</h3>
+              <div class="flex items-center gap-4 mt-1 text-sm text-gray-500">
+                <span class="flex items-center gap-1">
+                  <i class="fa-regular fa-clock"></i>
+                  2:30hrs
+                </span>
+                <span class="flex items-center gap-1">
+                  <i class="fa-solid fa-book"></i>
+                  03 Lessons
+                </span>
+              </div>
+              <div class="flex gap-2 mt-4">
+                <button class="flex-1 bg-gradient-to-r from-yellow-400 to-green-400 text-white py-2 rounded-[4px] text-sm flex items-center justify-center gap-1">
+                  <i class="fa-solid fa-play text-xs"></i>
+                  Watch Now
+                </button>
+                <button class="flex-1 bg-white border border-green-400 text-green-400 py-2 rounded-[4px] text-sm flex items-center justify-center gap-1">
+                  <i class="fa-solid fa-download text-xs"></i>
+                  Download
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="flex items-center mt-6">
+          <div class="flex items-center gap-6">
+            <span class="text-sm text-gray-600">Show</span>
+            <div class="relative">
+              <select class="appearance-none bg-white border rounded px-3 py-1 pr-8 text-sm">
+                <option>2</option>
+              </select>
+              <i class="fa-solid fa-chevron-down absolute right-2 top-1/2 -translate-y-1/2 text-xs text-gray-400"></i>
+            </div>
+            <span class="text-sm text-gray-600">Row</span>
+          </div>
+
+          <div class="flex items-center gap-2 ml-8">
+            <button class="p-2 text-gray-400 hover:bg-gray-50 rounded-md">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="px-3 py-1 bg-gradient-to-r from-yellow-400 to-green-400 text-white rounded-md">1</button>
+            <button class="p-2 text-gray-400 hover:bg-gray-50 rounded-md">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+</div>
+  </body>
+</html>   
