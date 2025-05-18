@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white border-b">
+      <div class="px-6 py-3 flex items-center">
+        <!-- Logo -->
+        <a class="flex items-center">
+          <div class="flex flex-col -space-y-1">
+            <div class="flex items-center">
+              <img src="https://media.licdn.com/dms/image/v2/D560BAQFMO_FydaEpBA/company-logo_200_200/company-logo_200_200/0/1726658673264/aaghaaz_tech_logo?e=1751500800&v=beta&t=5JCdqtvGFKyVscr231sWO1_6im-W74Ak7rXFTwYcd8I" 
+                   alt="Logo" 
+                   class="h-5">
+              <span class="text-xl font-bold text-[#000000] -ml-1">aghaaz</span>
+            </div>
+            <span class="text-xl font-bold italic text-[#000000] ml-6" style="margin-top: -8px; margin-left: 40px;">Tech</span>
+          </div>
+        </a>
+
+          <!-- Search Section -->
+          <div class="flex items-center ml-[60px] relative">
+            <div class="flex items-center w-[300px] bg-gray-50 relative overflow-hidden" style="border-radius: 5%; border: 2px solid transparent; background-image: linear-gradient(#fff, #fff), linear-gradient(90deg, #FFB800, #7FD157); background-origin: border-box; background-clip: content-box, border-box;">
+              <i class="fa-solid fa-magnifying-glass text-gray-400 absolute left-3"></i>
+              <input type="text" 
+                     placeholder="Search" 
+                     class="bg-transparent w-full pl-10 pr-2 py-2 text-sm placeholder-gray-400 outline-none" 
+                     style="border-radius: 5%;">
+              <div class="flex items-center gap-1.5 border-l border-gray-200 pl-2 pr-1 py-1.5">
+                <span class="text-sm text-gray-600">F</span>
+                <i class="fa-solid fa-chevron-down text-xs text-gray-400"></i>
+              </div>
+            </div>
+          </div>
+
+        <!-- User Section -->
+        <div class="flex items-center gap-6 ml-auto">
+          <div class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center">
+            <i class="fa-regular fa-bell text-gray-600"></i>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-gray-700">Hasnain</span>
+            <div class="relative group">
+              <button class="flex items-center gap-2">
+                <img src="avatar.jpg" alt="User" class="w-8 h-8 rounded-full">
+                <i class="fa-solid fa-chevron-down text-xs text-gray-400"></i>
+              </button>
+              <!-- Dropdown menu can be added here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="flex">
+      <!-- Sidebar -->
+     <!-- Sidebar -->
+      <div class="w-64 min-h-screen bg-white">
+  <div class="p-4 space-y-1">
+      <!-- Dashboard -->
+      <a href="dashnoard.html" class="flex items-center px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50">
+          <i class="fa-solid fa-house mr-3"></i>
+          <span class="font-medium">Dashboard</span>
+      </a>
+
+      <!-- Assignments -->
+      <a href="assignment.html" class="flex items-center px-4 py-3 rounded-lg bg-gradient-to-r from-yellow-400 to-teal-400 text-white">
+          <i class="fa-solid fa-clipboard-list mr-3"></i>
+          <span class="font-medium">Assignments</span>
+      </a>
+
+      <!-- Schedule -->
+      <a href="schedule.html" class="flex items-center px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50">
+          <i class="fa-regular fa-calendar-days mr-3"></i>
+          <span class="font-medium">Schedule</span>
+      </a>
+
+      <!-- Recordings -->
+      <a href="recording.html" class="flex items-center px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50">
+          <i class="fa-solid fa-message mr-3"></i>
+          <span class="font-medium">Recordings</span>
+      </a>
+
+      <!-- Resources -->
+      <a href="#" class="flex items-center px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50">
+          <i class="fa-solid fa-folder-closed mr-3"></i>
+          <span class="font-medium">Resources</span>
+      </a>
+
+      <!-- Notes -->
+      <a href="notes.html" class="flex items-center px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50">
+          <i class="fa-solid fa-note-sticky mr-3"></i>
+          <span class="font-medium">Notes</span>
+      </a>
+
+      <!-- Courses -->
+      <a href="#" class="flex items-center px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50">
+          <i class="fa-solid fa-graduation-cap mr-3"></i>
+          <span class="font-medium">Courses</span>
+      </a>
+  </div>
+      </div>
+      
+      <!-- Main Content -->
+      <div class="flex-1 p-8">
+        <!-- Header -->
+        <div class="mb-8 flex justify-between items-center">
+          <div>
+            <h1 class="text-2xl font-semibold flex items-center gap-2">
+              Assignments
+            </h1>
+            <p class="text-gray-500 mt-1">View and manage your course assignments</p>
+          </div>
+          <!-- Filter Section -->
+          <div class="flex items-center gap-4">
+            <div class="flex items-center">
+              <div class="relative flex items-center bg-gray-50 rounded-[10px] border px-3 py-2">
+                <i class="fa-solid fa-magnifying-glass text-gray-500 text-lg"></i>
+              </div>
+              <div class="flex items-center ml-2">
+                <span class="text-base font-medium">Filter by </span>
+                <span class="text-base bg-gradient-to-r from-yellow-400 to-teal-400 bg-clip-text text-transparent font-medium ml-1">dates</span>
+                <div class="h-5 border-l border-gray-300 mx-3"></div>
+                <span class="text-base font-medium">Status</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Assignments Table -->
+        <div class="bg-white rounded-lg shadow">
+          <!-- Table Header -->
+          <div class="grid grid-cols-5 p-4 border-b font-medium text-gray-600">
+            <div>Assignment Title</div>
+            <div>Course/lessons</div>
+            <div>Due Date</div>
+            <div>Status</div>
+            <div>Submit</div>
+          </div>
+
+          <!-- Table Rows -->
+          <div class="divide-y">
+            <!-- Assignment 1 -->
+            <div class="grid grid-cols-5 p-4 items-center">
+              <div>Conducting User Research</div>
+              <div class="text-gray-500">User Research and Per...</div>
+              <div>July 1, 2024</div>
+              <div><span class="text-green-500 flex items-center gap-1"><i class="fa-solid fa-circle text-[8px]"></i> Done</span></div>
+              <div class="text-gray-400">Submitted</div>
+            </div>
+
+            <!-- Assignment 2 -->
+            <div class="grid grid-cols-5 p-4 items-center">
+              <div>Competitive Analysis R...</div>
+              <div class="text-gray-500">Competitive Analysis in...</div>
+              <div>July 25, 2024</div>
+              <div><span class="text-blue-500 flex items-center gap-1"><i class="fa-solid fa-circle text-[8px]"></i> Progress</span></div>
+              <div><button class="text-gray-600 hover:text-gray-800">Upload</button></div>
+            </div>
+
+            <!-- Assignment 3 -->
+            <div class="grid grid-cols-5 p-4 items-center">
+              <div>Creating Wireframes</div>
+              <div class="text-gray-500">Wireframing and Protot...</div>
+              <div>August 1, 2024</div>
+              <div><span class="text-blue-500 flex items-center gap-1"><i class="fa-solid fa-circle text-[8px]"></i> Progress</span></div>
+              <div><button class="text-gray-600 hover:text-gray-800">Upload</button></div>
+            </div>
+
+            <!-- Assignment 4 -->
+            <div class="grid grid-cols-5 p-4 items-center">
+              <div>Usability Testing and F...</div>
+              <div class="text-gray-500">Usability Testing and It...</div>
+              <div>August 22, 2024</div>
+              <div><span class="text-red-500 flex items-center gap-1"><i class="fa-solid fa-circle text-[8px]"></i> Pending</span></div>
+              <div><button class="text-gray-600 hover:text-gray-800">Upload</button></div>
+            </div>
+
+            <!-- Assignment 5 -->
+            <div class="grid grid-cols-5 p-4 items-center">
+              <div>Developing Visual Desi...</div>
+              <div class="text-gray-500">Visual Design and Bran...</div>
+              <div>August 29, 2024</div>
+              <div><span class="text-red-500 flex items-center gap-1"><i class="fa-solid fa-circle text-[8px]"></i> Pending</span></div>
+              <div><button class="text-gray-600 hover:text-gray-800">Upload</button></div>
+            </div>
+
+            <!-- Assignment 6 -->
+            <div class="grid grid-cols-5 p-4 items-center">
+              <div>Creating a Design Syst...</div>
+              <div class="text-gray-500">Design Systems and C...</div>
+              <div>September 5, 2024</div>
+              <div><span class="text-red-500 flex items-center gap-1"><i class="fa-solid fa-circle text-[8px]"></i> Pending</span></div>
+              <div><button class="text-gray-600 hover:text-gray-800">Upload</button></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination Section -->
+        <div class="relative flex items-center mt-4 text-sm">
+          <div class="absolute left-0 flex items-center gap-2">
+            <span class="text-gray-600">Show</span>
+            <div class="relative">
+              <select class="appearance-none bg-white border rounded px-3 py-1 pr-8">
+                <option>10</option>
+                <option>20</option>
+                <option>30</option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-600">
+                <i class="fa-solid fa-chevron-down text-xs"></i>
+              </div>
+            </div>
+            <span class="text-gray-600">Row</span>
+          </div>
+
+          <div class="flex items-center gap-1 mx-auto">
+            <button class="p-2 text-gray-400 hover:text-gray-600">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="w-8 h-8 flex items-center justify-center rounded-lg bg-gradient-to-r from-yellow-400 to-teal-400 text-white">1</button>
+            <button class="w-8 h-8 flex items-center justify-center text-gray-600 hover:bg-gray-100 rounded-lg">2</button>
+            <button class="w-8 h-8 flex items-center justify-center text-gray-600 hover:bg-gray-100 rounded-lg">3</button>
+            <button class="w-8 h-8 flex items-center justify-center text-gray-600 hover:bg-gray-100 rounded-lg">4</button>
+            <button class="w-8 h-8 flex items-center justify-center text-gray-600 hover:bg-gray-100 rounded-lg">5</button>
+            <button class="px-2 text-gray-600">...</button>
+            <button class="w-8 h-8 flex items-center justify-center text-gray-600 hover:bg-gray-100 rounded-lg">10</button>
+            <button class="p-2 text-gray-600 hover:text-gray-800">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
